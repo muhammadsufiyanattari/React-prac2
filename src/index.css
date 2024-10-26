@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0%;
@@ -70,16 +70,40 @@ button:focus-visible {
   }
 }
 
-
-
+.container{
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  
+  
+}
+.row{
+  display: flex;
+  /* width: 1000px; */
+}
+.postCompA{
+  /* width: 200px; */
+  margin-right: 10px;
+  flex-direction: column;
+}
+.postCompB{
+  /* width: 200px; */
+  margin-right: 10px;
+  flex-direction: column;
+}.postCompC{
+  /* width: 200px; */
+  margin-left: 5px;
+  flex-direction: column;
+}
 .main{
 
-overflow: hidden;
+/* overflow: hidden; */
   -webkit-box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
 -moz-box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
 box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
   background-color: rgb(225, 216, 216);
-  width: 400px;
+  width: 300px;
+  height: 500px !important;
   border-right: 5px solid gray;
   border-bottom: 5px solid gray;
   
@@ -90,6 +114,7 @@ box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
 .header{
   background-color: rgb(69, 69, 240);
   color: white;
+  height: auto;
   padding: 5px;
   border-radius: 20px;
   display: flex;
@@ -97,6 +122,7 @@ box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
 }
 
 .profileImg{
+  height: auto;
   display: flex;
   
 }
@@ -109,6 +135,7 @@ box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
   color: rgb(174, 172, 172);
 }
 .profileIcon{
+  height: auto;
   font-size: 30px;
   font-weight: bold;
   margin-top: 20px;
@@ -119,6 +146,7 @@ box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
   width: 80px
 }
 .iconFooter{
+  height: auto;
   color: white;
   padding-top: 5px;
   display: flex;
@@ -128,35 +156,40 @@ box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
 
 
 .likeIcon{
-  padding: 6px;
+  padding: 0px;
 }
 .likeIcon :hover{
 background-color: blue;
 border-radius: 30px;
 cursor: pointer;
+padding: 5px;
 }
 .chatIcon{
-  padding: 6px;
+  padding: 0px;
 }
 .chatIcon :hover{
   background-color: rgb(38, 38, 38);
 border-radius: 30px;
 cursor: pointer;
+padding: 5px;
 }
 .shareIcon{
 
-  padding: 6px;
+  padding: 0px !important;
 }
 .shareIcon :hover{
-  background-color: rgb(38, 38, 38);
+  background-color: rgb(188, 32, 5);
 border-radius: 30px;
 cursor: pointer;
+padding: 5px;
 }
 
 .postImg img{
+  height: 200px;
   width: 300px;
 }
 .comment{
+  height: auto;
   /* border-bottom: 1px solid black; */
   /* border-top: 1px solid black; */
   /* border: 1px solid black; */
@@ -172,14 +205,18 @@ padding: 10px;
   
 }
 .commentCont{
-  margin-top: 3px;
-  font-size: 12px !important;
+  margin-top: 7px;
+  font-size: 10px !important;
+}
+.hello{
+  font-size: 11px;
 }
 .commentIcon span{
   padding: 0px 2px;
   /* color: white; */
 }
 .iconc{
+  
   font-size: 18px !important;
   padding-left: 2px !important;
   
